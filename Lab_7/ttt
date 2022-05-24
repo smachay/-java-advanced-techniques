@@ -1,0 +1,40 @@
+        addPaymentBtn.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                String strEventId = (String) paymentEventsCB.getSelectedItem();
+                String strPersonId = (String) paymentPersonsCB.getSelectedItem();
+                String strAmount = (String) paymentInstallmentsCB.getSelectedItem();
+                if(!strPersonId.isEmpty()&&!strEventId.isEmpty()&&!strAmount.isEmpty()){
+                    int num = (int)paymentNumberInput.getValue();
+                    double amount = num*Double.parseDouble(getValue(strAmount));
+                    //paymentService.save(new Payment(amount,getId(strPersonId),getId(strEventId),num));
+                    paymentNumberInput.setValue(0);
+
+                    //updates number of payments left for given event
+                    if(!installments.isEmpty()) {
+                        Optional<Installment> installment = installments.stream()
+                                .filter(el->el.getEventId()==getId(strEventId))
+                                .findFirst();
+
+                        if(installment.isPresent()){
+                            System.out.println("updejcik");
+                            String[] parms = new String[4];
+                            int installmentNumber = installment.get().getNumber()-num;
+                            parms[0]=String.valueOf(installment.get().getEventId());
+                            parms[1]=String.valueOf(installmentNumber);
+                            parms[2]=String.valueOf(installment.get().getDeadline());
+                            parms[3]=String.valueOf(installment.get().getAmount());
+                            System.out.println(Arrays.toString(parms));
+                            installmentService.update(installment.get(),parms);
+
+
+                        }
+                    }
+
+                }else{
+                    showMessageDialog(null, "Incorrect payment data");
+                }
+
+            }
+        });
