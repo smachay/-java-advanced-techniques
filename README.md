@@ -22,13 +22,21 @@ An application that allows you to outsource tasks to dynamically loaded class in
 An application with a graphical interface (Swing) that allows you to perform cluster analysis on tabular data.
 
 # Lab 6
-An application that simulates network of billboards, on wich advertisments are displayed. Clients can send request for displaying thair ads to the manager and if any billboard has free slot it will be displayed for specifide in the order span of time. The manager, as well as the client, can withdraw the order earlier.
+An application that simulates network of billboards on which advertisements are displayed. Clients can send request for displaying thair ads to the manager and if any billboard has free slot it will be displayed for specifide in the order span of time. The manager, as well as the client, can withdraw the order earlier.
 
 The application uses RMI to connect instances of the applications.
 
 # Lab 7
 CRUD application that implements DAO design pattern and uses JDBC to create a database connection. The database used for this project was PostgreSQL.
+
 The main functionality of the application is to allow school teachers to plan events and book payments from parents.
+
+# Lab 8
+Simple spring boot SOAP web service that creates person endpoint returning person data.
+
+# Lab 9
+An application that allows a user to encrypt and decrypt files with RSA and AES algorithm. Users must create their own Keystore and RSA/AES keys to use an application.
+
 
 
 
