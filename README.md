@@ -35,7 +35,7 @@ The main functionality of the application is to allow school teachers to plan ev
 Simple spring boot SOAP web service that creates person endpoint returning person data.
 
 # Lab 9
-An application that allows a user to encrypt and decrypt files with RSA and AES algorithm. Users must create their own Keystore and RSA/AES keys to use an application.
+An application that allows a user to encrypt and decrypt files with RSA and AES algorithms. Users must create their own Keystore and RSA/AES keys to use an application.
 
 
 
