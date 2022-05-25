@@ -33,6 +33,6 @@ Wybrałem domyślny folder program files.
 Po zakończeniu instalacji we wskazanym katalogu pojawił się folder z zainstalowaną aplikacją
 
 # Prezentacja działania 
-![](Lab10/assets/dziala.PNG)
+![](https://github.com/smachay/java-advanced-techniques/blob/main/Lab_10/assets/dziala.PNG)
 
 
