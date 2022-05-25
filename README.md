@@ -26,3 +26,9 @@ An application that simulates network of billboards, on wich advertisments are d
 
 The application uses RMI to connect instances of the applications.
 
+# Lab 7
+CRUD application that implements DAO design pattern and uses JDBC to create a database connection. The database used for this project was PostgreSQL.
+The main functionality of the application is to allow school teachers to plan events and book payments from parents.
+
+
+
